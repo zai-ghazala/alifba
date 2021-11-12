@@ -1,26 +1,8 @@
 import * as React from "react";
-import Random from "../components/random";
-import right from "../assets/hummingbird--right.png";
-import left from "../assets/hummingbird--left.png";
+import Container from "../components/container";
 
 export default function Home() {
   return (
-    <>
-      <div id="container">
-        <img
-          className="bird bird--right"
-          src={right}
-        />
-
-        <Random />
-
-        <img
-          className="bird bird--left"
-          src={left}
-        />
-
-        <div className="footer">made with 💖 by zainab ismail</div>
-      </div>
-    </>
+     <Container/>
   );
 }
