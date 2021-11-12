@@ -7,7 +7,10 @@
   font-family: Karla;
   src: url('/fonts/Karla-VariableFont_wght.ttf');
 }
-
+body {
+  font-family: Karla;
+  margin: 0
+}
   * {
     box-sizing: border-box;
   }
@@ -19,15 +22,14 @@
     display: flex;
     margin-bottom: 0;
   }
+  div.space, div.letters {
+    text-align: center;
+    padding: 1.5em
+  }
   div.letters {
     width: 50vw;
     min-height: 100vh;
     background: #facade;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
   div.space {
     width: 50vw;
@@ -37,11 +39,6 @@
     background: linear-gradient(to right, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
     background-size: 120px;
     background-repeat: repeat;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
 
   div.space span.letter-drop {
@@ -60,14 +57,17 @@
                 12px 12px #fff;
     color: #fff;
     font-family: 'Noto Sans Arabic';
-    font-size: 8em;
-    margin: 0.25em;
   }
 
-span.letter {
+span.letter-drop, span.letter {
   font-family: 'Noto Sans Arabic';
-  font-size: 8em;
-  margin: 0.25em;
+  font-size: 5.5vw;
+  margin: 0.5em;
+  line-height: 1.5em
+}
+
+div.letters div, div.space div {
+  display: inline-block
 }
 
 
@@ -100,4 +100,27 @@ span.letter {
   color: #f9de00;
   text-shadow: #e0c700 1px 1px, #ffee60 -1px -1px, #ffbe14 -2px -2px 6px, #ffe723 -2px -2px, #ffe723 -1px -2px, #ffe723 -1px -3px, #ffe723 -2px -4px, #ffe723 -2px -5px, #ffe723 -3px -6px, #f9de00 -4px -7px, rgba(0, 0, 5, 0.4) 3px 4px 5px, rgba(0, 0, 5, 0.2) -3px -4px 5px;
   transform: rotate(5deg) translateY(1%);
+}
+.alert {
+  display: none
+}
+@media screen and (orientation: portrait) {
+  .alert {
+    background: hotpink;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-weight: bold;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 1.75em;
+    padding: 3em;
+  }
 }
