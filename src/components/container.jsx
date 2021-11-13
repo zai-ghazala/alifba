@@ -2,6 +2,60 @@ import React from 'react';
 import Letter from './letter';
 import Drop from './drop';
 
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
+  const components = [ <Letter key="alif" targetKey="alif" label="alif" letter="ا"/>,
+  <Letter key="baa" targetKey="baa" label="baa" letter="ب"/>,
+  <Letter key="taa" targetKey="taa" label="taa" letter="ت"/>,
+  <Letter key="saa" targetKey="saa" label="saa" letter="ث"/>,
+  <Letter key="jeem" targetKey="jeem" label="jeem" letter="ج"/>,
+  <Letter key="haa" argetKey="haa" label="haa" letter="ح"/>,
+  <Letter key="khaa" targetKey="khaa" label="khaa" letter="خ"/>,
+  <Letter key="daal" targetKey="daal" label="daal" letter="د"/>,
+  <Letter key="zaal" targetKey="zaal" label="zaal" letter="ذ"/>,
+  <Letter key="raa" targetKey="raa" label="raa" letter="ر"/>,
+  <Letter key="zaai" targetKey="zaai" label="zaai" letter="ز"/>,
+  <Letter key="seen" targetKey="seen" label="seen" letter="س"/>,
+  <Letter key="sheen" targetKey="sheen" label="sheen" letter="ش"/>,
+  <Letter key="suad" targetKey="suad" label="suad" letter="ص"/>,
+  <Letter key="duad" targetKey="duad" label="duad" letter="ض"/>,
+  <Letter Kkey="taa-heavy" targetKey="taa-heavy" label="taa-heavy" letter="ط"/>,
+  <Letter key="zaa-heavy" targetKey="zaa-heavy" label="zaa-heavy" letter="ظ"/>,
+  <Letter key="ain" targetKey="ain" label="ain" letter="ع"/>,
+  <Letter key="gain" targetKey="gain" label="gain" letter="غ"/>,
+  <Letter key="faa" targetKey="faa" label="faa" letter="ف"/>,
+  <Letter key="qaaf" targetKey="qaaf" label="qaaf" letter="ق"/>,
+  <Letter key="kaaf" targetKey="kaaf" label="kaaf" letter="ك"/>,
+  <Letter key="laam" targetKey="laam" label="laam" letter="ل"/>,
+  <Letter key="meem" targetKey="meem" label="meem" letter="م"/>,
+  <Letter key="noon" targetKey="noon" label="noon" letter="ن"/>,
+  <Letter key="waw" targetKey="waw" label="waw" letter="و"/>,
+  <Letter key="small-haa" targetKey="small-haa" label="small-haa" letter="ه"/>,
+  <Letter key="hamzah" targetKey="hamzah" label="hamzah" letter="ء"/>,
+  <Letter key="yaa" targetKey="yaa" label="yaa" letter="ي"/>,
+]
+
+let shuffled = components
+  .map((value) => ({ value, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({ value }) => value)
+
 export default class Container extends React.Component {
 
     
@@ -10,35 +64,7 @@ export default class Container extends React.Component {
     return (
         <>
         <div className="letters">
-          <Letter targetKey="alif" label="alif" letter="ا"/>
-          <Letter targetKey="baa" label="baa" letter="ب"/>
-          <Letter targetKey="taa" label="taa" letter="ت"/>
-          <Letter targetKey="saa" label="saa" letter="ث"/>
-          <Letter targetKey="jeem" label="jeem" letter="ج"/>
-          <Letter targetKey="haa" label="haa" letter="ح"/>
-          <Letter targetKey="khaa" label="khaa" letter="خ"/>
-          <Letter targetKey="daal" label="daal" letter="د"/>
-          <Letter targetKey="zaal" label="zaal" letter="ذ"/>
-          <Letter targetKey="raa" label="raa" letter="ر"/>
-          <Letter targetKey="zaai" label="zaai" letter="ز"/>
-          <Letter targetKey="seen" label="seen" letter="س"/>
-          <Letter targetKey="sheen" label="sheen" letter="ش"/>
-          <Letter targetKey="suad" label="suad" letter="ص"/>
-          <Letter targetKey="duad" label="duad" letter="ض"/>
-          <Letter targetKey="taa-heavy" label="taa-heavy" letter="ط"/>
-          <Letter targetKey="zaa-heavy" label="zaa-heavy" letter="ظ"/>
-          <Letter targetKey="ain" label="ain" letter="ع"/>
-          <Letter targetKey="gain" label="gain" letter="غ"/>
-          <Letter targetKey="faa" label="faa" letter="ف"/>
-          <Letter targetKey="qaaf" label="qaaf" letter="ق"/>
-          <Letter targetKey="kaaf" label="kaaf" letter="ك"/>
-          <Letter targetKey="laam" label="laam" letter="ل"/>
-          <Letter targetKey="meem" label="meem" letter="م"/>
-          <Letter targetKey="noon" label="noon" letter="ن"/>
-          <Letter targetKey="waw" label="waw" letter="و"/>
-          <Letter targetKey="small-haa" label="small-haa" letter="ه"/>
-          <Letter targetKey="hamzah" label="hamzah" letter="ء"/>
-          <Letter targetKey="yaa" label="yaa" letter="ي"/>
+        {shuffled}
           </div>
         
         <div className="space">

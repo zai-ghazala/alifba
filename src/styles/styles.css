@@ -106,7 +106,7 @@ div.letters div, div.space div {
 }
 @media screen and (orientation: portrait) {
   .alert {
-    background: cornflowerblue;
+    background: hotpink;
     color: #fff;
     display: flex;
     flex-direction: column;
