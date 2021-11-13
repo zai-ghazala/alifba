@@ -8,7 +8,6 @@ export default class Drop extends React.Component {
 
    dropped = (e) => {
         e.target.style.color = '#111';
-        e.target.style.textShadow = 'none';
     }; 
 
     render() {
