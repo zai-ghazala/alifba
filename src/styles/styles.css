@@ -46,6 +46,7 @@ body {
     color: #fff;
     font-weight: 900;
     font-family: 'Noto Sans Arabic';
+    -webkit-text-stroke: 5px #fff;
   }
 
 span.letter-drop, span.letter {
