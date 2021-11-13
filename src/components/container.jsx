@@ -25,7 +25,7 @@ function shuffle(array) {
   <Letter key="taa" targetKey="taa" label="taa" letter="ت"/>,
   <Letter key="saa" targetKey="saa" label="saa" letter="ث"/>,
   <Letter key="jeem" targetKey="jeem" label="jeem" letter="ج"/>,
-  <Letter key="haa" argetKey="haa" label="haa" letter="ح"/>,
+  <Letter key="haa" targetKey="haa" label="haa" letter="ح"/>,
   <Letter key="khaa" targetKey="khaa" label="khaa" letter="خ"/>,
   <Letter key="daal" targetKey="daal" label="daal" letter="د"/>,
   <Letter key="zaal" targetKey="zaal" label="zaal" letter="ذ"/>,
