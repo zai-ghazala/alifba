@@ -7,6 +7,7 @@ export default class Drop extends React.Component {
     }
 
    dropped = (e) => {
+        e.containerElem.style.visibility = 'hidden';
         e.target.style.color = '#111';
         e.target.style.webkitTextStroke = '5px #111'
     }; 
