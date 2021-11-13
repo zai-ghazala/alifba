@@ -23,8 +23,11 @@ body {
     margin-bottom: 0;
   }
   div.space, div.letters {
-    text-align: center;
-    padding: 0 3em 3em 3em
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   div.letters {
     width: 50vw;
@@ -49,12 +52,12 @@ body {
     -webkit-text-stroke: 5px #fff;
   }
 span.letter-drop, span.letter {
-  font-family: 'Noto Sans Arabic';
-  font-size: 4.5vw;
+  font-family: "Noto Sans Arabic";
+  font-size: 5.25vw;
   margin: 0.5em;
-  line-height: 1em;
+  line-height: 0.5em;
   display: inline-block;
-  height: 0.5em
+  height: 0.75em
 }
 
 div.letters div, div.space div {
