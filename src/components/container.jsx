@@ -2,24 +2,6 @@ import React from 'react';
 import Letter from './letter';
 import Drop from './drop';
 
-function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (currentIndex != 0) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-  
-    return array;
-  }
-
   const components = [ <Letter key="alif" targetKey="alif" label="alif" letter="ا"/>,
   <Letter key="baa" targetKey="baa" label="baa" letter="ب"/>,
   <Letter key="taa" targetKey="taa" label="taa" letter="ت"/>,
@@ -56,9 +38,7 @@ let shuffled = components
   .sort((a, b) => a.sort - b.sort)
   .map(({ value }) => value)
 
-export default class Container extends React.Component {
-
-    
+export default class Container extends React.Component {   
   render() {
       
     return (
