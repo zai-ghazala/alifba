@@ -7,6 +7,22 @@
   font-family: Karla;
   src: url('/fonts/Karla-VariableFont_wght.ttf');
 }
+@font-face {
+  font-family: 'Lilita One';
+  src: url('/fonts/LilitaOne-Regular.ttf');
+}
+h1, h2 {
+  letter-spacing: 0.5px;
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Lilita One';
+}
+h1.title {
+  font-size: 2em;
+}
+h2.subtitle {
+  font-size: 1.5em;
+}
 body {
   font-family: Karla;
   margin: 0
@@ -114,7 +130,7 @@ div.letters div, div.space div {
     text-align: center;
     top: 0;
     left: 0;
-    font-size: 1.75em;
+    font-size: 1.25em;
     padding: 3em;
   }
 }
