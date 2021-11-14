@@ -9,6 +9,7 @@ export default class Drop extends React.Component {
    dropped = (e) => {
         e.target.style.color = '#111';
         e.target.style.webkitTextStroke = '5px #111'
+        new Audio(`/audio/${this.props.name}.wav`).play();
     }; 
 
     render() {
