@@ -4,7 +4,7 @@ import { DragDropContainer } from 'react-drag-drop-container';
 export default class Letter extends React.Component {
 
   playAudio = () => {
-    new Audio(`/audio/${this.props.label}.ogg`).play();
+    new Audio(`/audio/${this.props.label}.wav`).play();
   }
 
     render() {
