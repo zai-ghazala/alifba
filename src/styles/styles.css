@@ -32,7 +32,7 @@ body {
   div.letters {
     width: 50vw;
     min-height: 100vh;
-    background: #facade;
+    background: #daedcd;
   }
   div.space {
     direction: rtl;
