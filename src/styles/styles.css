@@ -79,7 +79,7 @@ span.letter-drop, span.letter {
 div.letters div, div.space div {
   display: inline-block
 }
-h1.title span {
+h1.title span, h2.subtitle {
   -webkit-text-stroke: 1px #111
 }
 h1.title span:nth-of-type(1) {
