@@ -18,7 +18,7 @@ h1, h2 {
   font-family: 'Lilita One';
 }
 h1.title {
-  font-size: 2em;
+  font-size: 3em;
 }
 h2.subtitle {
   font-size: 1.5em;
@@ -79,7 +79,27 @@ span.letter-drop, span.letter {
 div.letters div, div.space div {
   display: inline-block
 }
-
+h1.title span {
+  -webkit-text-stroke: 1px #111
+}
+h1.title span:nth-of-type(1) {
+  color: #f18829
+}
+h1.title span:nth-of-type(2) {
+  color: #00b9ed
+}
+h1.title span:nth-of-type(3) {
+  color: #ed5053
+}
+h1.title span:nth-of-type(4) {
+  color: #00af4f
+}
+h1.title span:nth-of-type(5) {
+  color: #8e509f
+}
+h1.title span:nth-of-type(6) {
+  color: #f9de00
+}
 
 .alif, .khaa, .sheen, .gain, .noon {
   color: #f18829;
@@ -114,6 +134,9 @@ div.letters div, div.space div {
 .alert {
   display: none
 }
+.alert p {
+  padding: 1em
+}
 @media screen and (orientation: portrait) {
   .alert {
     background: cornflowerblue;
@@ -131,6 +154,5 @@ div.letters div, div.space div {
     top: 0;
     left: 0;
     font-size: 1.25em;
-    padding: 3em;
   }
 }
