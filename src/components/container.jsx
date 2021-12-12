@@ -61,7 +61,7 @@ export default class Container extends React.Component {
 
     return (
         <>
-        { this.state.count === 29 ? <><div className="congrats"><img src="/images/fireworks2.gif" alt="fireworks"/><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1><h2 className="subtitle"><a href="http://alifba.zaiismail.net">Start over?</a></h2></div></> : null }
+        { this.state.count === 29 ? <><div className="congrats"><img src="/images/fireworks.gif" alt="fireworks"/><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1><h2 className="subtitle"><a href="http://alifba.zaiismail.net">Start over?</a></h2></div></> : null }
 
         <div className="letters">
         {shuffled}
