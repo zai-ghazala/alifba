@@ -50,112 +50,112 @@ export default class Container extends React.Component {
         <div className="space">
             
             <Drop targetKey="alif" name="alif">
-                <span className="letter-drop">ا</span> 
+                ا 
             </Drop>
 
             <Drop targetKey="baa" name="baa">
-                <span className="letter-drop">ب</span> 
+                ب 
             </Drop>
 
             <Drop targetKey="taa" name="taa">
-                <span className="letter-drop">ت</span> 
+                ت 
             </Drop>
 
             <Drop targetKey="saa" name="saa">
-                <span className="letter-drop">ث</span> 
+                ث 
             </Drop>
 
             <Drop targetKey="jeem" name="jeem">
-                <span className="letter-drop">ج</span> 
+                ج 
             </Drop>
 
             <Drop targetKey="haa" name="haa">
-                <span className="letter-drop">ح</span> 
+                ح 
             </Drop>
 
             <Drop targetKey="khaa" name="khaa">
-                <span className="letter-drop">خ</span> 
+                خ 
             </Drop>
 
             <Drop targetKey="daal" name="daal">
-                <span className="letter-drop">د</span> 
+                د 
             </Drop>
 
             <Drop targetKey="zaal" name="zaal">
-                <span className="letter-drop">ذ</span> 
+                ذ 
             </Drop>
 
             <Drop targetKey="raa" name="raa">
-                <span className="letter-drop">ر</span> 
+                ر 
             </Drop>
 
             <Drop targetKey="zaai" name="zaai">
-                <span className="letter-drop">ز</span> 
+                ز 
             </Drop>
 
             <Drop targetKey="seen" name="seen">
-                <span className="letter-drop">س</span> 
+                س 
             </Drop>
 
             <Drop targetKey="sheen" name="sheen">
-                <span className="letter-drop">ش</span> 
+                ش 
             </Drop>
             
             <Drop targetKey="suad" name="suad">
-                <span className="letter-drop">ص</span> 
+                ص 
             </Drop>
             
             <Drop targetKey="duad" name="duad">
-                <span className="letter-drop">ض</span> 
+                ض 
             </Drop>
             
             <Drop targetKey="taa-heavy" name="taa-heavy">
-                <span className="letter-drop">ط</span> 
+                ط 
             </Drop>
             
             <Drop targetKey="zaa-heavy" name="zaa-heavy">
-                <span className="letter-drop">ظ</span> 
+                ظ 
             </Drop>
             
             <Drop targetKey="ain" name="ain">
-                <span className="letter-drop">ع</span> 
+                ع 
             </Drop>
             
             <Drop targetKey="gain" name="gain">
-                <span className="letter-drop">غ</span> 
+                غ 
             </Drop>
             
             <Drop targetKey="faa" name="faa">
-                <span className="letter-drop">ف</span> 
+                ف 
             </Drop>
             
             <Drop targetKey="qaaf" name="qaaf">
-                <span className="letter-drop">ق</span> 
+                ق 
             </Drop>
             
             <Drop targetKey="kaaf" name="kaaf">
-                <span className="letter-drop">ك</span> 
+                ك 
             </Drop>
             <Drop targetKey="laam" name="laam">
-                <span className="letter-drop">ل</span> 
+                ل 
             </Drop>
             <Drop targetKey="meem" name="meem">
-                <span className="letter-drop">م</span> 
+                م 
             </Drop>
             <Drop targetKey="noon" name="noon">
-                <span className="letter-drop">ن</span> 
+                ن 
             </Drop>
             <Drop targetKey="waw" name="waw">
-                <span className="letter-drop">و</span> 
+                و 
             </Drop>
             <Drop targetKey="small-haa" name="small-haa">
-                <span className="letter-drop">ه</span> 
+                ه 
             </Drop>
             <Drop targetKey="hamzah" name="hamzah">
-                <span className="letter-drop">ء</span> 
+                ء 
             </Drop>
             <Drop targetKey="yaa" name="yaa">
-                <span className="letter-drop">ي</span> 
+                ي 
             </Drop>
             
 

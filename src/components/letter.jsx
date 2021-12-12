@@ -5,7 +5,7 @@ export default class Letter extends React.Component {
 
     render() {
   
-      const classes= `${this.props.label} letter`
+      const classes= `${this.props.label}`
 
       return (
         <DragDropContainer
