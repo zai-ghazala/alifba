@@ -15,6 +15,9 @@ export default class Drop extends React.Component {
             src: [`/audio/${this.props.name}.wav`]
           });
         sound.play();
+
+        this.props.handler()
+        
     }; 
 
     render() {

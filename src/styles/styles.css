@@ -20,8 +20,9 @@ h1, h2 {
 h1.title {
   font-size: 3em;
 }
-h2.subtitle {
+h2.subtitle, h2.subtitle a {
   font-size: 1.5em;
+  color: #fff
 }
 body {
   font-family: Karla;
@@ -76,25 +77,26 @@ span.droptarget, div.letters span {
 div.letters div, div.space div {
   display: inline-block
 }
-h1.title span, h2.subtitle {
-  -webkit-text-stroke: 1px #111
+h1.title span, h2.subtitle, h2.subtitle a {
+  -webkit-text-stroke: 1px #111;
+  text-decoration: none
 }
-h1.title span:nth-of-type(1) {
+h1.title span:nth-of-type(n+1) {
   color: #f18829
 }
-h1.title span:nth-of-type(2) {
+h1.title span:nth-of-type(2n+2) {
   color: #00b9ed
 }
-h1.title span:nth-of-type(3) {
+h1.title span:nth-of-type(3n+3) {
   color: #ed5053
 }
-h1.title span:nth-of-type(4) {
+h1.title span:nth-of-type(4n+4) {
   color: #00af4f
 }
-h1.title span:nth-of-type(5) {
+h1.title span:nth-of-type(5n+5) {
   color: #8e509f
 }
-h1.title span:nth-of-type(6) {
+h1.title span:nth-of-type(6n+6) {
   color: #f9de00
 }
 
@@ -152,4 +154,26 @@ h1.title span:nth-of-type(6) {
     left: 0;
     font-size: 1.25em;
   }
+}
+.congrats {
+  background: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  font-weight: bold;
+  width: 100vw;
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+}
+.congrats img {
+  width: 27vw;
+  margin: auto;
+  filter: brightness(120%) drop-shadow(0 0 0.75rem #f7acae);
+  mix-blend-mode: hard-light
 }
