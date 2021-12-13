@@ -173,5 +173,5 @@ h1.title span:nth-of-type(6n+6) {
 .congrats .mashallah {
   display: table-cell;
   vertical-align: middle;
-  filter: brightness(120%) drop-shadow(0 0 1.5rem #fff);
+  filter: brightness(120%) drop-shadow(0 0 1.5rem lavender);
 }
