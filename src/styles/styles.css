@@ -26,7 +26,8 @@ h2.subtitle, h2.subtitle a {
 }
 body {
   font-family: Karla;
-  margin: 0
+  margin: 0;
+  overflow-x: hidden
 }
   * {
     box-sizing: border-box;
@@ -154,26 +155,28 @@ h1.title span:nth-of-type(6n+6) {
     left: 0;
     font-size: 1.25em;
   }
+
 }
 .congrats {
-  background: cornflowerblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
+  background: url('/images/sparkles.gif') no-repeat;
+  background-size: cover;
   font-weight: bold;
-  width: 100vw;
   position: absolute;
-  z-index: 1000;
   text-align: center;
+  display: table;
   top: 0;
   left: 0;
-  font-size: 1em;
+  font-size: 1.25em;
+  height: 100vh;
+  width: 100vw;
+}
+.congrats .mashallah {
+  display: table-cell;
+  vertical-align: middle;
 }
 .congrats img {
   width: 27vw;
   margin: auto;
-  filter: brightness(120%) drop-shadow(0 0 0.75rem #f7acae);
+  filter: brightness(120%) drop-shadow(0 0 0.75rem #fff);
   mix-blend-mode: hard-light
 }
