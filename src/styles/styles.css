@@ -158,7 +158,7 @@ h1.title span:nth-of-type(6n+6) {
 
 }
 .congrats {
-  background: url('/images/sparkles.gif') no-repeat;
+  background: #46009a url('/images/sparkles.gif') no-repeat;
   background-size: cover;
   font-weight: bold;
   position: absolute;
@@ -173,10 +173,5 @@ h1.title span:nth-of-type(6n+6) {
 .congrats .mashallah {
   display: table-cell;
   vertical-align: middle;
-}
-.congrats img {
-  width: 27vw;
-  margin: auto;
-  filter: brightness(120%) drop-shadow(0 0 0.75rem #fff);
-  mix-blend-mode: hard-light
+  filter: brightness(120%) drop-shadow(0 0 1.5rem #fff);
 }
