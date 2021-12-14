@@ -1,7 +1,7 @@
 import React from 'react';
 import Letter from './letter';
 import Drop from './drop';
-
+import {Howl} from 'howler';
 
   const components = [ <Letter key="alif" targetKey="alif" label="alif" letter="ا"/>,
   <Letter key="baa" targetKey="baa" label="baa" letter="ب"/>,
@@ -54,12 +54,23 @@ export default class Container extends React.Component {
          })
       }
 
+      playSound = () => {
+
+        var array = ['tasnim1', 'tasnim2'];
+        const random = array[Math.floor(Math.random() * array.length)];
+        var sound = new Howl({
+            src: [`/audio/messages/${random}.wav`]
+          });
+        setTimeout(function() {
+        sound.play();
+        }, 3000);
+      }
+
+      
 
   render() {
 
-
-    return ( this.state.count === 29 ? 
-<div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1><h2 className="subtitle"><a href="http://alifba.zaiismail.net">Press here to play again!</a></h2></div></div> :  <><div className="letters">
+    return ( this.state.count === 29 ? <> {this.playSound()} <div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1><h2 className="subtitle"><a href="http://alifba.zaiismail.net">Press here to play again!</a></h2></div></div></>  :  <><div className="letters">
         {shuffled}
           </div>
         
