@@ -82,7 +82,7 @@ span.droptarget, div.letters span {
 div.letters div, div.space div {
   display: inline-block
 }
-h1.title span, h2.subtitle, h2.subtitle a {
+h1.title span, h2.subtitle, h2.subtitle a, h2.subtitle2, h2.subtitle2 a {
   -webkit-text-stroke: 1px #111;
   text-decoration: none
 }
