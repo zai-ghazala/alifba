@@ -24,6 +24,10 @@ h2.subtitle, h2.subtitle a {
   font-size: 1.5em;
   color: #fff
 }
+h2.subtitle2, h2.subtitle2 a {
+  font-size: 1.2em;
+  color: #fff
+}
 body {
   font-family: Karla;
   margin: 0;
