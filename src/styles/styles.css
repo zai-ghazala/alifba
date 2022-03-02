@@ -4,8 +4,8 @@
   font-weight: 700
 }
 @font-face {
-  font-family: Karla;
-  src: url('/fonts/Karla-VariableFont_wght.ttf');
+  font-family: "Circular";
+  src: url("/fonts/CircularStd-Book.otf");
 }
 @font-face {
   font-family: 'Lilita One';
@@ -29,7 +29,7 @@ h2.subtitle2, h2.subtitle2 a {
   color: #fff
 }
 body {
-  font-family: Karla;
+  font-family: Circular;
   margin: 0;
   overflow-x: hidden
 }
