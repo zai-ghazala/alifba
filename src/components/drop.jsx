@@ -13,7 +13,7 @@ export default class Drop extends React.Component {
         e.target.style.webkitTextStroke = '5px #111';
         var sound = new Howl({
             src: [`/audio/${this.props.name}.wav`],
-            autoplay: false,
+            autoplay: true,
           });
         sound.play();
 
