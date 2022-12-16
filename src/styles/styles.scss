@@ -49,6 +49,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 1em
   }
   div.letters {
     width: 50vw;
@@ -58,6 +59,7 @@ body {
   div.space {
     direction: rtl;
     width: 50vw;
+    padding: 1em;
     left: 50vw;
     min-height: 100vh;
     background: #e9dfc4;
