@@ -49,17 +49,17 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 1em
   }
   div.letters {
+    padding: 1em 1em 1em 2em;
     width: 50vw;
     min-height: 100vh;
     background: #daedcd;
   }
   div.space {
+    padding: 1em 2em 1em 1em;
     direction: rtl;
     width: 50vw;
-    padding: 1em;
     left: 50vw;
     min-height: 100vh;
     background: #e9dfc4;
