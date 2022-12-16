@@ -77,7 +77,9 @@ span.droptarget {
 span.droptarget, div.letters span {
   font-family: "Noto Sans Arabic";
   font-size: 3.5vw;
-  padding: 0 0.25em;
+  padding: 1vw;
+  display: inline-block;
+  line-height: 0.5vw;
   display: inline-block;
 }
 
