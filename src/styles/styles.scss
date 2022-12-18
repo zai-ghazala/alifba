@@ -59,8 +59,6 @@ body {
   div.space {
     padding: 1em 3em 1em 1em;
     direction: rtl;
-    left: 50vw;
-    min-height: 100vh;
     background: #e9dfc4;
     background: linear-gradient(to right, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
     background-size: 120px;
@@ -72,16 +70,14 @@ span.droptarget {
     font-weight: 900;
     font-family: 'Noto Sans Arabic';
     -webkit-text-stroke: 5px #fff;
-    margin: 0 1vw 0 1vw;
   }
 span.droptarget, div.letters span {
   font-family: "Noto Sans Arabic";
-  font-size: 3.25vw;
-}
-div.letters span {
-  margin: 0 0.5vw 0 0.5vw;
-}
+  font-size: 3vw;
+  width: 3.85vw;
+  text-align: center;
 
+}
 div.letters div, div.space div {
   display: inline-block
 }
