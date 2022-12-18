@@ -137,24 +137,30 @@ h1.title span:nth-of-type(6n+6) {
   transform: rotate(5deg) translateY(1%);
 }
 .alert {
-  background: cornflowerblue;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  font-weight: bold;
-  width: 100vw;
-  position: absolute;
-  z-index: 1000;
-  text-align: center;
-  top: 0;
-  left: 0;
-  font-size: 1.25em;
-  p {
-    padding: 1em
+  display: none
+}
+.alert p {
+  padding: 1em
+}
+@media screen and (orientation: portrait) {
+  .alert {
+    background: cornflowerblue;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-weight: bold;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 1.25em;
   }
+
 }
 .congrats {
   background: cornflowerblue;
