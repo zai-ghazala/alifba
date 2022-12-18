@@ -71,7 +71,7 @@ export default class Container extends React.Component {
 
   render() {
 
-    return ( this.state.count === 1 ? <> {this.playSound()} <a href="http://alifba.zaiz.ai"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  :  <><div className="letters">
+    return ( this.state.count === 29 ? <> {this.playSound()} <a href="http://alifba.zaiz.ai"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  :  <><div className="letters">
         {shuffled}
           </div>
         
