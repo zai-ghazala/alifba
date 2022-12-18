@@ -149,7 +149,7 @@ h1.title span:nth-of-type(6n+6) {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    max-height: 100vh;
+    height: 100vh;
     font-weight: bold;
     width: 100vw;
     position: absolute;
@@ -170,7 +170,7 @@ h1.title span:nth-of-type(6n+6) {
   top: 0;
   left: 0;
   font-size: 1.25em;
-  max-height: 100vh;
+  height: 100vh;
   width: 100vw;
   animation: fadein 5s;
 }
