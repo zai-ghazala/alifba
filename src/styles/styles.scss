@@ -51,6 +51,7 @@ body, html {
     flex-wrap: wrap;
     width: 50vw;
     height: 100vh;
+    height:  -webkit-fill-available;
     justify-content: center;
     align-content: center;
   }
@@ -151,6 +152,7 @@ h1.title span:nth-of-type(6n+6) {
     justify-content: center;
     align-content: center;
     height: 100%;
+    height:  -webkit-fill-available;
     font-weight: bold;
     width: 100vw;
     position: absolute;
@@ -172,6 +174,7 @@ h1.title span:nth-of-type(6n+6) {
   left: 0;
   font-size: 1.25em;
   height: 100%;
+  height:  -webkit-fill-available;
   width: 100vw;
   animation: fadein 5s;
 }
