@@ -50,7 +50,8 @@ body {
     flex-wrap: wrap;
     width: 50vw;
     height: 100vh;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
   }
   div.letters {
     padding: 1em 1em 1em 3em;
@@ -74,7 +75,7 @@ span.droptarget {
 span.droptarget, div.letters span {
   font-family: "Noto Sans Arabic";
   font-size: 3vw;
-  width: 3.85vw;
+  width: calc(((50vw - 4em) / 13) + 4vw);
   text-align: center;
 
 }
