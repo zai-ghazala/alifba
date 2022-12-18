@@ -160,8 +160,8 @@ h1.title span:nth-of-type(6n+6) {
     left: 0;
     font-size: 1.25em;
   }
-  .content {
-    display: none
+  .letters, .space {
+    display: none !important
   }
 }
 .congrats {
