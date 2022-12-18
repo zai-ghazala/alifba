@@ -60,7 +60,6 @@ export default class Container extends React.Component {
         const random = array[Math.floor(Math.random() * array.length)];
         var sound = new Howl({
             src: [`/audio/messages/${random}.mp3`],
-            html5: true,
           });
         setTimeout(function() {
         sound.play();

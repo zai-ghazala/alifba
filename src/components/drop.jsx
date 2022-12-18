@@ -14,7 +14,6 @@ export default class Drop extends React.Component {
         var sound = new Howl({
             src: [`/audio/${this.props.name}.mp3`],
             autoplay: true,
-            html5: true,
           });
         sound.play();
 
