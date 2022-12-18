@@ -48,18 +48,18 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 50vw;
+    height: 100vh;
     justify-content: space-evenly;
   }
   div.letters {
     padding: 1em 1em 1em 2em;
-    width: 50vw;
-    min-height: 100vh;
+  
     background: #daedcd;
   }
   div.space {
     padding: 1em 2em 1em 1em;
     direction: rtl;
-    width: 50vw;
     left: 50vw;
     min-height: 100vh;
     background: #e9dfc4;
@@ -77,10 +77,8 @@ span.droptarget {
 span.droptarget, div.letters span {
   font-family: "Noto Sans Arabic";
   font-size: 3.5vw;
-  padding: 1vw;
-  display: inline-block;
-  line-height: 0.5vw;
-  display: inline-block;
+  height: 5vw;
+  width: 7.5vw;
 }
 
 div.letters div, div.space div {
