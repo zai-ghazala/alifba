@@ -50,7 +50,7 @@ body, html {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50vw;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     align-content: center;
   }
@@ -150,7 +150,7 @@ h1.title span:nth-of-type(6n+6) {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    height: 100%;
     font-weight: bold;
     width: 100vw;
     position: absolute;
@@ -171,7 +171,7 @@ h1.title span:nth-of-type(6n+6) {
   top: 0;
   left: 0;
   font-size: 1.25em;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   animation: fadein 5s;
 }
