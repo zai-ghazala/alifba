@@ -28,9 +28,10 @@ h2.subtitle2, h2.subtitle2 a {
   font-size: 1.2em;
   color: #fff
 }
-body {
+body, html {
   font-family: Circular;
   margin: 0;
+  padding: 0;
   overflow: hidden
 }
   * {
