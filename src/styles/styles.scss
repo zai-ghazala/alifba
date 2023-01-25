@@ -51,6 +51,8 @@ body, html {
     height: 100vh;
     justify-content: center;
     align-content: center;
+    backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   }
   div.letters {
     padding: 1em 1em 1em 3em;
@@ -73,10 +75,9 @@ span.droptarget {
   }
 span.droptarget, div.letters span {
   font-family: "Noto Sans Arabic";
-  font-size: 3vw;
+  font-size: 4.5vw;
   width: calc(((50vw - 4em) / 13) + 4vw);
   text-align: center;
-
 }
 div.letters div, div.space div {
   display: inline-block
