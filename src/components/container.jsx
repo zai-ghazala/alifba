@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Letter from './letter';
 import Drop from './drop';
-import {Howl} from 'howler';
+import Confetti from 'react-confetti'
+
 
   const components = [ <Letter key="alif" targetKey="alif" label="alif" letter="ا"/>,
   <Letter key="baa" targetKey="baa" label="baa" letter="ب"/>,
@@ -35,153 +36,155 @@ import {Howl} from 'howler';
 ]
 
 let shuffled = components
-  .map((value) => ({ value, sort: Math.random() }))
+  .map((value) => ({ value, sort: Math.random()}))
   .sort((a, b) => a.sort - b.sort)
   .map(({ value }) => value)
 
-export default class Container extends React.Component {   
-    constructor() {
-        super();
-        this.state = {
-            count: 0
-        }
+export default function Container() { 
+   
+	const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  	function getCurrentDimension(){
+    	return {
+      		width: window.innerWidth,
+      		height: window.innerHeight
+    	}
+  	}
+  
+  	useEffect(() => {
+    		const updateDimension = () => {
+      			setScreenSize(getCurrentDimension())
+    		}
+    		window.addEventListener('resize', updateDimension);
+    
+		
+    		return(() => {
+        		window.removeEventListener('resize', updateDimension);
+    		})
+  	}, [screenSize])
+
+    const [count, setCount] = useState(0)
+
+    const handleDrop = () => {
+        setCount(count + 1)
       }
-      
+    
 
-      handleDrop = (count) => {
-        this.setState(prevState => {
-            return {count: prevState.count + 1}
-         })
-      }
-
-      playSound = () => {
-
-        var array = ['tasnim1', 'tasnim2', 'aaminah', 'maariya1', 'maariya2', 'haleema', 'girls'];
-        const random = array[Math.floor(Math.random() * array.length)];
-        var sound = new Howl({
-            src: [`/audio/messages/${random}.mp3`],
-          });
-        setTimeout(function() {
-        sound.play();
-        }, 3000);
-      }
-
-      
-
-  render() {
-
-    return ( this.state.count === 29 ? <> {this.playSound()} <a href="http://alifba.zaiz.ai"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  :  <><div className="letters">
+    return ( count === 29 ? <><Confetti
+    width={screenSize.width}
+    height={screenSize.height}
+  /><a href="http://alifba.zaiz.ai"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  :  <><div className="letters">
         {shuffled}
           </div>
         
         <div className="space">
             
-            <Drop handler={this.handleDrop}  targetKey="alif" name="alif">
+            <Drop handler={() => handleDrop()}  targetKey="alif" name="alif">
                 ا 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="baa" name="baa">
+            <Drop handler={() => handleDrop()}  targetKey="baa" name="baa">
                 ب 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="taa" name="taa">
+            <Drop handler={() => handleDrop()}  targetKey="taa" name="taa">
                 ت 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="saa" name="saa">
+            <Drop handler={() => handleDrop()}  targetKey="saa" name="saa">
                 ث 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="jeem" name="jeem">
+            <Drop handler={() => handleDrop()}  targetKey="jeem" name="jeem">
                 ج 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="haa" name="haa">
+            <Drop handler={() => handleDrop()}  targetKey="haa" name="haa">
                 ح 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="khaa" name="khaa">
+            <Drop handler={() => handleDrop()}  targetKey="khaa" name="khaa">
                 خ 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="daal" name="daal">
+            <Drop handler={() => handleDrop()}  targetKey="daal" name="daal">
                 د 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="zaal" name="zaal">
+            <Drop handler={() => handleDrop()}  targetKey="zaal" name="zaal">
                 ذ 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="raa" name="raa">
+            <Drop handler={() => handleDrop()}  targetKey="raa" name="raa">
                 ر 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="zaai" name="zaai">
+            <Drop handler={() => handleDrop()}  targetKey="zaai" name="zaai">
                 ز 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="seen" name="seen">
+            <Drop handler={() => handleDrop()}  targetKey="seen" name="seen">
                 س 
             </Drop>
 
-            <Drop handler={this.handleDrop}  targetKey="sheen" name="sheen">
+            <Drop handler={() => handleDrop()}  targetKey="sheen" name="sheen">
                 ش 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="suad" name="suad">
+            <Drop handler={() => handleDrop()}  targetKey="suad" name="suad">
                 ص 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="duad" name="duad">
+            <Drop handler={() => handleDrop()}  targetKey="duad" name="duad">
                 ض 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="taa-heavy" name="taa-heavy">
+            <Drop handler={() => handleDrop()}  targetKey="taa-heavy" name="taa-heavy">
                 ط 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="zaa-heavy" name="zaa-heavy">
+            <Drop handler={() => handleDrop()}  targetKey="zaa-heavy" name="zaa-heavy">
                 ظ 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="ain" name="ain">
+            <Drop handler={() => handleDrop()}  targetKey="ain" name="ain">
                 ع 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="gain" name="gain">
+            <Drop handler={() => handleDrop()}  targetKey="gain" name="gain">
                 غ 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="faa" name="faa">
+            <Drop handler={() => handleDrop()}  targetKey="faa" name="faa">
                 ف 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="qaaf" name="qaaf">
+            <Drop handler={() => handleDrop()}  targetKey="qaaf" name="qaaf">
                 ق 
             </Drop>
             
-            <Drop handler={this.handleDrop}  targetKey="kaaf" name="kaaf">
+            <Drop handler={() => handleDrop()}  targetKey="kaaf" name="kaaf">
                 ك 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="laam" name="laam">
+            <Drop handler={() => handleDrop()}  targetKey="laam" name="laam">
                 ل 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="meem" name="meem">
+            <Drop handler={() => handleDrop()}  targetKey="meem" name="meem">
                 م 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="noon" name="noon">
+            <Drop handler={() => handleDrop()}  targetKey="noon" name="noon">
                 ن 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="waw" name="waw">
+            <Drop handler={() => handleDrop()}  targetKey="waw" name="waw">
                 و 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="small-haa" name="small-haa">
+            <Drop handler={() => handleDrop()}  targetKey="small-haa" name="small-haa">
                 ه 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="hamzah" name="hamzah">
+            <Drop handler={() => handleDrop()}  targetKey="hamzah" name="hamzah">
                 ء 
             </Drop>
-            <Drop handler={this.handleDrop}  targetKey="yaa" name="yaa">
+            <Drop handler={() => handleDrop()}  targetKey="yaa" name="yaa">
                 ي 
             </Drop>
             
@@ -192,4 +195,3 @@ export default class Container extends React.Component {
             </>
     )
   }
-}
