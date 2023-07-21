@@ -1,10 +1,7 @@
 import React from 'react';
 import { DragDropContainer } from 'react-drag-drop-container';
 
-export default class Letter extends React.Component {
-
-    render() {
-  
+export default function Letter(props) {
 
       const handleDrag = () => {
 
@@ -16,19 +13,18 @@ export default class Letter extends React.Component {
         backFace.classList.toggle('top')
       }
 
-    
 
       return (
         <DragDropContainer
-          targetKey={this.props.targetKey}
+          targetKey={props.targetKey}
           dragClone={true}
-          dragData={{label: this.props.label, letter: this.props.letter}}
+          dragData={{label: props.label, letter: props.letter}}
           onDragStart={() => handleDrag()}
           render = {() => {
-            return <span className={`${this.props.label}`}>{this.props.letter}</span> 
+            return <span className={`${props.label}`}>{props.letter}</span> 
           }}
         />
           
       );
     }
-  }
+  
