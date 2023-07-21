@@ -1,11 +1,13 @@
 import React from 'react';
-import { DropTarget } from 'react-drag-drop-container';
 import {Howl} from 'howler';
+import { DropTarget } from 'react-drag-drop-container';
 
 export default class Drop extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    sleep = ms => new Promise(r => setTimeout(r, ms));
 
    dropped = (e) => {
         e.target.style.color = '#111';
@@ -18,7 +20,13 @@ export default class Drop extends React.Component {
         sound.play();
 
         this.props.handler()
+        var frontFace = document.querySelector('.card__face--front')
+        var backFace = document.querySelector('.card__face--back')
         
+          frontFace.classList.toggle('top')
+          this.sleep(3000).then(() => {  
+          backFace.classList.toggle('top')
+          })
     }; 
 
     render() {

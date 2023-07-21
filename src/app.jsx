@@ -28,7 +28,7 @@ export default function Home() {
     <Router>
       <Seo />
         <main role="main">
-          <div className="content">
+          <div className="scene">
             {/* Router specifies which component to insert here as the main content */}
             
             <PageRouter />
