@@ -57,7 +57,7 @@ div.letters {
   justify-content: center;
   align-content: center;
   border: 6px double var(--color);
-  height: calc(100vh - 90px);
+  height: calc(100vh - 55px);
   width: calc(100vw - 55px);
   content: '';
   border: 10px double var(--color);
@@ -65,13 +65,6 @@ div.letters {
   position: absolute;
   top: 25px;
   left: 25px;
-}
-div.instructions {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  font-size: 0.75em;
-  text-align: center;
 }
 div.letters {
   padding: 1em;
@@ -203,9 +196,6 @@ h1.title span:nth-of-type(6n + 6) {
   padding: 1em;
 }
 @media screen and (orientation: portrait) {
-  div.instructions {
-    display: none
-  }
   .alert {
     background: #0f2027; /* fallback for old browsers */
     background: -webkit-linear-gradient(
@@ -256,7 +246,6 @@ h1.title span:nth-of-type(6n + 6) {
 .scene {
   width: 100vw;
   height: 100vh;
-  perspective: 25vw;
 }
 .card__face {
   position: absolute;
@@ -265,5 +254,4 @@ h1.title span:nth-of-type(6n + 6) {
 }
 .top {
   z-index: 1;
-  opacity: 1;
 }

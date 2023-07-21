@@ -74,7 +74,7 @@ let shuffled = components
 
 
             </div>
-            <div className="instructions"><p>Press anywhere or drag to switch screen.<br/>Drag the letters into the correct places.</p></div>
+
 </div>
     )
   }
