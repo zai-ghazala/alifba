@@ -69,8 +69,9 @@ div.letters {
 }
 div.instructions {
   position: absolute;
-  bottom: 1vh;
+  bottom: 0;
   width: 100vw;
+  font-size: 0.75em;
   text-align: center;
 }
 div.letters {
