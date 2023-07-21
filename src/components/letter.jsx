@@ -24,6 +24,7 @@ export default class Letter extends React.Component {
           dragClone={true}
           dragData={{label: this.props.label, letter: this.props.letter}}
           onDragStart={() => handleDrag()}
+          onDragLeave={() => handleDrag()}
           render = {() => {
             return <span className={`${this.props.label}`}>{this.props.letter}</span> 
           }}
