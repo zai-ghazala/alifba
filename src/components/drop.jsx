@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Howl} from 'howler';
 import { DropTarget } from 'react-drag-drop-container';
 
