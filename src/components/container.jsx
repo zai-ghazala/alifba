@@ -57,7 +57,7 @@ let shuffled = components
     return ( count === 29 ? <><Confetti
     width={screenSize.width}
     height={screenSize.height}
-  /><a href="http://alifba.ghazala.cc"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  : 
+  /><a href="http://alifba.suddenghazals.com"><div className="congrats"><div className="mashallah"><h1 className="title"><span>M</span><span>A</span><span>S</span><span>H</span><span>A</span><span>A</span><span>L</span><span>L</span><span>A</span><span>H</span><span>!</span></h1></div></div></a></>  : 
 
    <div className="card">
 <div className="letters card__face card__face--front top">
